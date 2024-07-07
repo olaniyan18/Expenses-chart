@@ -2,6 +2,8 @@
 
 ![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)
 
+Preview live: https://olaniyan18.github.io/Expenses-chart/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
