@@ -1,0 +1,194 @@
+/** @format */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(27, 66%, 92%);
+  font-family: DM Sans;
+}
+
+.balance-container {
+  background-color: hsl(10, 79%, 65%);
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+
+  border-radius: 15px;
+  color: hsl(33, 100%, 98%);
+}
+
+.balance {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: hsl(33, 100%, 98%);
+  font-weight: 400;
+}
+
+.dollar {
+  font-size: 20px;
+  color: hsl(33, 100%, 98%);
+  font-weight: 600;
+}
+
+svg {
+  float: right;
+  margin-top: -50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.spending {
+  background-color: hsl(33, 100%, 98%);
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  padding-top: 5px;
+  border-radius: 15px;
+  margin-top: 15px;
+  padding-bottom: 28px;
+}
+
+.spending2 {
+  font-size: 27px;
+  height: 35px;
+  margin-left: 10px;
+  margin-top: -20px;
+  color: hsl(25, 47%, 15%);
+}
+
+.bars {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 350px;
+  margin-top: 30px;
+  margin-bottom: -66px;
+}
+
+.bars li {
+  display: table-cell;
+  width: 100px;
+  height: 250px;
+  position: relative;
+}
+
+.bars span {
+  display: block;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  color: hsl(28, 10%, 53%);
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+.bar {
+  display: block;
+  background: hsl(10, 79%, 65%);
+  width: 35px;
+  border-radius: 4px;
+  margin-left: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.bar:hover {
+  background-color: hsl(186, 34%, 60%);
+  cursor: pointer;
+}
+
+.bar:hover::before {
+  content: "$" attr(data-percentage);
+  color: hsl(27, 66%, 92%);
+  background-color: hsl(25, 47%, 15%);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+hr {
+  font-weight: 50;
+  color: hsl(33, 100%, 98%);
+  width: 330px;
+}
+
+.total {
+  font-size: 12px;
+  color: hsl(28, 10%, 53%);
+  margin-top: 20px;
+  margin-left: 7px;
+}
+
+.total-number {
+  font-size: 30px;
+  color: hsl(25, 47%, 15%);
+  font-weight: 800;
+  margin-left: 7px;
+}
+
+.profit {
+  font-size: 12px;
+  color: hsl(25, 47%, 15%);
+  font-weight: 800;
+  margin-top: -35px;
+  float: right;
+  margin-right: 7px;
+}
+
+.last {
+  font-size: 12px;
+  color: hsl(28, 10%, 53%);
+  float: right;
+  margin-top: -20px;
+  margin-right: 7px;
+}
+
+@media only screen and (max-width: 500px) {
+  .balance-container {
+    width: 300px;
+  }
+
+  .spending {
+    width: 300px;
+  }
+
+  .bars {
+    width: 300px;
+    margin-left: -15px;
+    margin-bottom: -100px;
+  }
+
+  hr {
+    width: 300px;
+  }
+
+  .spending2 {
+    margin-left: -5px;
+  }
+
+  .total,
+  .total-number {
+    margin-left: 0px;
+  }
+
+  .profit,
+  .last {
+    margin-right: 0px;
+  }
+
+  .bars li {
+    height: 300px;
+  }
+}
